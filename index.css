@@ -1,3 +1,13 @@
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+    }
+
 .main {
 
     height: 1080px;
@@ -11,3 +21,30 @@
     url('static/images/background.png');
     background-position: center;
 }
+
+#logo {
+    float: left;
+    margin-left: 12px;
+    width: 15px;
+}
+
+#name {
+    font-size: xx-large;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#mine {
+    float: left;
+    width: 0%;
+}
+
+img.animated-gif{
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+  }
